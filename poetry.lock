@@ -253,7 +253,7 @@ version = "1.17.1"
 description = "Foreign Function Interface for Python calling C code."
 optional = false
 python-versions = ">=3.8"
-groups = ["cicd", "testing"]
+groups = ["main", "cicd", "testing"]
 files = [
     {file = "cffi-1.17.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:df8b1c11f177bc2313ec4b2d46baec87a5f3e71fc8b45dab2ee7cae86d9aba14"},
     {file = "cffi-1.17.1-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:8f2cdc858323644ab277e9bb925ad72ae0e67f69e804f4898c070998d50b1a67"},
@@ -1318,7 +1318,7 @@ version = "1.1.0"
 description = "MessagePack serializer"
 optional = false
 python-versions = ">=3.8"
-groups = ["cicd", "testing"]
+groups = ["main", "cicd", "testing"]
 files = [
     {file = "msgpack-1.1.0-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:7ad442d527a7e358a469faf43fda45aaf4ac3249c8310a82f0ccff9164e5dccd"},
     {file = "msgpack-1.1.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:74bed8f63f8f14d75eec75cf3d04ad581da6b914001b474a5d3cd3372c8cc27d"},
@@ -1789,7 +1789,7 @@ version = "2.8.0"
 description = "Algorand SDK in Python"
 optional = false
 python-versions = ">=3.10"
-groups = ["cicd", "testing"]
+groups = ["main", "cicd", "testing"]
 files = [
     {file = "py-algorand-sdk-2.8.0.tar.gz", hash = "sha256:2a2ddc94ab5c0989ed90f1b97eebb9857531b1e9c9d0d3437a57c17539ed6367"},
     {file = "py_algorand_sdk-2.8.0-py3-none-any.whl", hash = "sha256:0647a5aae4c87f0780048f98c1ee1b57a6c8fcec2c38306e3a50e42f0a81eb37"},
@@ -1826,7 +1826,7 @@ version = "2.22"
 description = "C parser in Python"
 optional = false
 python-versions = ">=3.8"
-groups = ["cicd", "testing"]
+groups = ["main", "cicd", "testing"]
 files = [
     {file = "pycparser-2.22-py3-none-any.whl", hash = "sha256:c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc"},
     {file = "pycparser-2.22.tar.gz", hash = "sha256:491c8be9c040f5390f5bf44a5b07752bd07f56edf992381b05c701439eec10f6"},
@@ -2101,7 +2101,7 @@ version = "1.5.0"
 description = "Python binding to the Networking and Cryptography (NaCl) library"
 optional = false
 python-versions = ">=3.6"
-groups = ["cicd", "testing"]
+groups = ["main", "cicd", "testing"]
 files = [
     {file = "PyNaCl-1.5.0-cp36-abi3-macosx_10_10_universal2.whl", hash = "sha256:401002a4aaa07c9414132aaed7f6836ff98f59277a234704ff66878c2ee4a0d1"},
     {file = "PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.manylinux_2_24_aarch64.whl", hash = "sha256:52cb72a79269189d4e0dc537556f4740f7f0a9ec41c1322598799b0bdad4ef92"},
@@ -3013,4 +3013,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "d5b81340f4253799881708061e44b7f6b64569f965ab61d66a296e8f21db95b6"
+content-hash = "a88c419669be7b9179f7a9a553ebd26e3be3d69789cf2a783c5f130789f981a8"

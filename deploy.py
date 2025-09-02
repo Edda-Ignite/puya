@@ -1,26 +1,16 @@
-import os
-from algosdk.v2client.algod import AlgodClient
-from algosdk import account, mnemonic, transaction
-from beaker import client
+from algosdk.v2client import algod
+from algosdk.transaction import ApplicationCreateTxn, StateSchema, OnComplete, wait_for_confirmation
+from algosdk import account, mnemonic
 
-# This is a sample mnemonic, DO NOT use this for real assets.
-# Replace this with your own Testnet mnemonic.
-mnemonic_phrase = "your 25-word mnemonic goes here"
+# === CONFIG ===
+ALGOD_ADDRESS = "https://testnet-api.algonode.cloud"
+ALGOD_TOKEN = ""  # No token needed for Algonode
+MNEMONIC = "junk frame cram pattern midnight include rice morning spoil family bright detect immune absent ugly acid seek busy hazard gift choice enrich camp absorb duty"
 
-# Connect to the Algorand Testnet
-algod_address = "https://testnet-api.algosandbox.io"
-algod_token = ""  # For public sandbox, token is often empty
-
-algod_client = AlgodClient(algod_token, algod_address)
-
-def deploy_app():
-    # Load the smart contract from the contract.py file
-    from contract import GitHubBoxContract
-    app = GitHubBoxContract()
-
-    # Get the private key and address from your mnemonic
-    private_key = mnemonic.to_private_key(mnemonic_phrase)
-    sender_address = account.address_from_private_key(private_key)
+# === SETUP ===
+client = algod.AlgodClient(ALGOD_TOKEN, ALGOD_ADDRESS)
+private_key = mnemonic.to_private_key(MNEMONIC)
+sender = account.address_from_private_key(private_key)
 
     print(f"Deploying from account: {sender_address}")
 

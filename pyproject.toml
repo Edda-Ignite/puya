@@ -34,6 +34,8 @@ networkx = "^3.4.2"
 # vendored mypy dependencies
 mypy_extensions = "^1.0.0"
 pathspec = ">=0.9"
+algorand-python = "^2.9.0"
+algopy = "^0.7.2"
 
 [tool.poetry.group.dev.dependencies]
 # include stubs distribution package as a dev dependency
